@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
  * main - A program that prints the last digits of a random number
  * and whether its greater than 5, less than 6, or 0
