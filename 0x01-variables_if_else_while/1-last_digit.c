@@ -2,13 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - A program that prints the last digits of a random number
- * and whether its greater than 5, less than 6, or 0
+ * main - Entry point
+ * Description: A program that checks on the last digit of assigned var
  * Return: Always 0
  */
 int main(void)
 {
-	int n;
+	int n, m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
