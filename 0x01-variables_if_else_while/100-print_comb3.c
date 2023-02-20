@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <time.h>
 /**
  * main - Entry point
  * Description:prints two digits combination
@@ -7,22 +8,20 @@
  */
 int main(void)
 {
-	int c, i;
+	int d, p;
 
-	for (c = '0'; c <= '9'; c++)
+	for (d = '0'; d < '9'; d++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			if (c < i)
+			if (p != d)
 			{
-				putchar(c);
-				putchar(i);
-
-		if (c != '8' || (c == '8' && i != '9'))
-		{
-			putchar(',');
-			putchar('');
-		}
+				putchar(d);
+				putchar(p);
+				if (d == '8' && p == '9')
+					continue;
+				putchar(',');
+					putchar(' ');
 			}
 		}
 	}
