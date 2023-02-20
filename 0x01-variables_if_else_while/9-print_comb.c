@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - entry point
- * Description:prints numbers
+ * main - Entry point
+ * Description: Prints numbers
  * Return:Always 0 (success)
  */
 int main(void)
 {
 	int i;
 
-	for (i = '0'; i <= '9' ; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
 	putchar(i);
 	if (i != '9')
